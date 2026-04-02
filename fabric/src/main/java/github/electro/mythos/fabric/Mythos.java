@@ -8,3 +8,4 @@ public final class Mythos implements ModInitializer {
         github.electro.mythos.Mythos.init();
     }
 }
+
