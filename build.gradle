@@ -102,6 +102,10 @@ subprojects {
         }
 
         maven {
+            url = "https://cursemaven.com"
+        }
+
+        maven {
             name = "ManasCore"
             url = 'https://nexus.nighti.dev/repository/manasmods-public/'
         }
@@ -165,6 +169,7 @@ subprojects {
             common(project(path: ':common', configuration: 'namedElements')) { transitive false }
             shadowBundle project(path: ':common', configuration: 'transformProductionNeoForge')
 
+            implementation "curse.maven:tensura-reincarnated-643695:7857382"
             implementation "io.github.manasmods:manascore-attribute-neoforge:$rootProject.manasCoreVersion"
             implementation "io.github.manasmods:manascore-command-neoforge:$rootProject.manasCoreVersion"
             implementation "io.github.manasmods:manascore-config-neoforge:$rootProject.manasCoreVersion"
